@@ -2,6 +2,7 @@ package io.mrcr.tests;
 
 import com.codeborne.selenide.*;
 import io.mrcr.logic.driver.DesktopDriver;
+import io.mrcr.logic.pages.exchange.AuthPage;
 import io.mrcr.logic.pages.exchange.MainPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -10,18 +11,19 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class test001TransactionRoutingWithCardUsa implements DesktopDriver {
     private MainPage mainPage;
+    private AuthPage authPage;
     private SelenideElement iframe;
 
     @BeforeMethod
     void setUp() {
         mainPage = new MainPage();
+        authPage = new AuthPage();
         iframe = $("#widget-container > iframe");
         switchTo().frame(iframe);
     }
 
     @Test
     void test() {
-
         mainPage
                 .clickCurrencyFromButton()
                 .clickUahCurrencyButton()

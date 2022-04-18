@@ -6,22 +6,21 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPage {
-    private SelenideElement elConfirmCountryButton = $("button[data-test='country_confirm']");
-    private SelenideElement elCountrySelector = $x("//button[text()='Germany']");
-    private SelenideElement elCountryField = $x("//*[@id=\"Ra4SSXJIkULIFPSJwRQSD\"]");
-    private ElementsCollection elsCountries = $$x("//*[@data-test='country']");
-    private SelenideElement elConfirmButton = $x("//button[@type='button' and text()='Confirm']");
-    private SelenideElement elFromAmountField = $("input[data-testid='fromAmount']");
-    private SelenideElement elToAmountField = $x("input[data-testid='fromAmount']");
-    private SelenideElement elAddressField = $x("//*[@data-test=\"address_input\"]");
-    private SelenideElement elTermsSwitcher = $x("//button[@data-test=\"amount_switch\"]");
-    private SelenideElement elAmountButton = $x("//button[@data-test=\"amount_button\"]");
-    private SelenideElement elCurrencyFromButton = $x("//div[@class=\"brkt1\"]/span[text()='USD']");
-    private SelenideElement elUahCurrencyButton = $x("//button[@data-testid=\"currencyUAH\"]");
+    private final SelenideElement elConfirmCountryButton = $("button[data-test='country_confirm']");
+    private final SelenideElement elCountrySelector = $x("//button[text()='Germany']");
+    private final SelenideElement elCountryField = $x("//*[@id=\"Ra4SSXJIkULIFPSJwRQSD\"]");
+    private final ElementsCollection elsCountries = $$x("//*[@data-test='country']");
+    private final SelenideElement elConfirmButton = $x("//button[@type='button' and text()='Confirm']");
+    private final SelenideElement elFromAmountField = $("input[data-testid='fromAmount']");
+    private final SelenideElement elToAmountField = $x("input[data-testid='fromAmount']");
+    private final SelenideElement elAddressField = $x("//*[@data-test=\"address_input\"]");
+    private final SelenideElement elTermsSwitcher = $x("//button[@data-test=\"amount_switch\"]");
+    private final SelenideElement elAmountButton = $x("//button[@data-test=\"amount_button\"]");
+    private final SelenideElement elCurrencyFromButton = $x("//div[@class=\"brkt1\"]/span[text()='USD']");
+    private final SelenideElement elUahCurrencyButton = $x("//button[@data-testid=\"currencyUAH\"]");
 
     public MainPage clickConfirmCountryButton() {
-        elConfirmCountryButton
-                .click();
+        elConfirmCountryButton.click();
         return this;
     }
 

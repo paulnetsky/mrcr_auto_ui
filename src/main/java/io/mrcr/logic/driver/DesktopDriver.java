@@ -15,7 +15,6 @@ public interface DesktopDriver {
         Configuration.fastSetValue = true;
         Configuration.clickViaJs = true;
         Configuration.headless = false;
-        Configuration.proxyEnabled = true;
         Configuration.baseUrl = "https://exchange.mrcr.io";
 
         open(Configuration.baseUrl);

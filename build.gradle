@@ -13,6 +13,7 @@ dependencies {
     implementation 'com.codeborne:selenide:6.3.5'
     implementation 'org.testng:testng:7.5'
     implementation 'net.lightbody.bmp:browsermob-proxy:2.1.5'
+    implementation 'com.browserup:browserup-proxy-core:2.1.2'
 }
 
 test {
